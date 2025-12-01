@@ -1,0 +1,11 @@
+# Ignore trained artifacts (regenerate via train_model.py)
+artifacts/*.joblib
+artifacts/*.pkl
+
+# Python env/cache
+.venv/
+.streamlit/
+__pycache__/
+
+# OS
+.DS_Store
