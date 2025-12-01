@@ -172,7 +172,7 @@ def ensure_artifacts():
         )
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     cmd = [
-        "python",
+        sys.executable,
         "train_model.py",
         "--data-path",
         str(data_path),

@@ -1,6 +1,7 @@
 import json
 import random
 import subprocess
+import sys
 from pathlib import Path
 
 import altair as alt
@@ -26,7 +27,7 @@ def ensure_artifacts():
         )
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     train_cmd = [
-        "python",
+        sys.executable,
         "train_model.py",
         "--data-path",
         str(data_path),
